@@ -10,16 +10,16 @@
       <div class="tags">
         <span class="tag">Microscopy</span>
         <span class="tag">GPU Computing</span>
-        <span class="tag">Imaging</span>
+        <span class="tag">Atomic deficiencies</span>
       </div>
     </div>
     <div class="card-content">
-      <div class="image-container">
-        <img src="/images/research/research1.jpg" alt="Computative Imaging Research" class="research-image">
-      </div>
       <div class="content-text">
         <p><strong>Multislice electron ptychography</strong> is an advanced imaging technique used to obtain high-resolution three-dimensional structural information of a sample at the atomic scale in-plane and nanoscale out-of-plane. This technique solves the multiple scattering problem of electrons, reconstructing the phase information and structure of the sample by scanning a convergent beam and recording diffraction patterns at each position.</p>
         <p>This technique relies heavily on <strong>GPU-accelerated computing</strong> and <strong>MATLAB coding</strong>, iteratively minimizing the loss function of the non-linear optimization problem of electron scattering. Our group have several servers equipped with <strong>NVIDIA A100 or RTX-4090 GPUs</strong>, which helps a lot in the time-consuming reconstructions (~ 10 hours of reconstruction for each dataset)!</p>
+        <div class="image-container">
+          <img src="/img/TCMEP.jpg" alt="Computative Imaging Research" class="research-image">
+        </div>
         <div class="sub-project">
           <h3>Tilt-coupled multislice electron microscopy</h3>
           <p>In this work, we introduce an extension of multislice electron ptychography, which couple small-angle projections into the reconstruction process to improve depth resolution to the sub-nanometer scale. We experimentally demonstrate three-dimensional visualization of dilute praseodymium dopants in a brownmillerite oxide, Ca<sub>2</sub>Co<sub>2</sub>O<sub>5</sub>, along with the accompanying lattice distortions.</p>
@@ -39,17 +39,16 @@
       <h2>Nickelate Superconductors</h2>
       <div class="tags">
         <span class="tag">Superconductivity</span>
-        <span class="tag">Materials Science</span>
-        <span class="tag">Condensed Matter</span>
+        <span class="tag">Oxygen vacancies</span>
+        <span class="tag">Ligand holes</span>
       </div>
     </div>
     <div class="card-content">
-      <div class="image-container">
-        <img src="/images/research/research2.jpg" alt="Nickelate Superconductors Research" class="research-image">
-      </div>
       <div class="content-text">
-        <h3>Overview</h3>
         <p>Nickelate superconductors are a class of transition metal oxides that exhibit high-temperature superconductivity, similar to cuprates. The most well-studied compounds belong to the rare-earth nickelate family, particularly the infinite-layer nickelates <strong>RNiO<sub>2</sub></strong> (R = La, Nd, Pr, etc.), and recently in Ruddlesden-Popper phase <strong>La<sub>3</sub>Ni<sub>2</sub>O<sub>7</sub></strong> and its related compounds. Nickelate superconductors provide a new platform for exploring unconventional superconductivity, multi-orbital correlations, and the interplay of charge-transfer and Mott physics. Their discovery has expanded the search for high-temperature superconductors beyond cuprates.</p>
+        <div class="image-container">
+          <img src="/img/NiSC.jpg" alt="Nickelate Superconductors Research" class="research-image">
+        </div>
         <div class="sub-project">
           <h3>Seeing the vacancies</h3>
           <p>In this work, we develop an <strong>energy-filtered version of multislice electron ptychography</strong>, assisted by electron energy-loss spectroscopy, to address the most relevant atomic orbitals and the role of atomic deficiencies in <strong>La<sub>3</sub>Ni<sub>2</sub>O<sub>7-δ</sub></strong>. We reveal the preferential occupation of vacancies on the inner apical oxygen site, and statistically determine the nanoscale concentration of these vacancies. Besides, we demonstrate the strong charge-transfer characteristics of <strong>La<sub>3</sub>Ni<sub>2</sub>O<sub>7-δ</sub></strong>, with hole carriers that are self-doped from Ni sites into O sites. These observations will assist in further development and understanding of superconducting nickelate materials, while our imaging technique for quantifying atomic deficiencies can also be widely applied in materials science and condensed-matter physics.</p>
@@ -82,7 +81,7 @@
     </div>
     <div class="card-content">
       <div class="image-container">
-        <img src="/images/research/research2.jpg" alt="Planar Tunneling Spectroscopy Research" class="research-image">
+        <img src="/img/PTJ.jpg" alt="Planar Tunneling Spectroscopy Research" class="research-image">
       </div>
       <div class="content-text">
         <p><em>This is a project of mine as an undergraduate!</em></p>
@@ -104,7 +103,7 @@
       <h2>Other Side Projects</h2>
       <div class="tags">
         <span class="tag">Cuprates</span>
-        <span class="tag">Collaborations</span>
+        <span class="tag">Scanning tunneling microscopy</span>
       </div>
     </div>
     <div class="card-content">
@@ -156,7 +155,7 @@
 
   <div class="collaboration-section">
     <h2>Interested in Collaboration?</h2>
-    <p>I am always open to new collaboration opportunities with researchers in related fields. If you are interested in collaborating on any of the above research areas, please feel free to <a href="/contact">contact me</a>.</p>
+    <p>I am always open to new collaboration opportunities with researchers in related fields. If you are interested in collaborating on any of the above research areas, please feel free to <a href="/">contact me</a>.</p>
   </div>
 </div>
 
@@ -225,8 +224,8 @@
   }
   
   .tag {
-    padding: 0.2rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.3rem 0.9rem;
+    font-size: 1.4rem;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
@@ -238,22 +237,10 @@
     padding: 0;
   }
   
-  @media (min-width: 768px) {
-    .card-content {
-      flex-direction: row;
-    }
-  }
-  
   .image-container {
-    flex: 0 0 100%;
-    max-height: 300px;
+    width: 100%;
     overflow: hidden;
-  }
-  
-  @media (min-width: 768px) {
-    .image-container {
-      flex: 0 0 40%;
-    }
+    margin-bottom: 1rem;
   }
   
   .research-image {
@@ -283,6 +270,7 @@
   .sub-project h3 {
     margin-top: 0;
     color: #4a5568;
+    font-size: 1.3rem;
   }
   
   .publications, .collaborators {
@@ -293,7 +281,7 @@
   
   .publications h4, .collaborators h4 {
     color: #4a5568;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
@@ -303,6 +291,7 @@
   
   .publications li {
     margin-bottom: 0.8rem;
+    font-size: 1rem;
   }
   
   .publications a {
@@ -326,7 +315,7 @@
     padding: 0.8rem 1.2rem;
     background-color: #f8f9fa;
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: 2.2rem;
     border-left: 3px solid #667eea;
   }
   
@@ -341,6 +330,7 @@
     text-align: center;
     margin-bottom: 2rem;
     color: #2d3748;
+    font-size: 1.8rem;
   }
   
   .advisor-cards {
@@ -362,19 +352,19 @@
   }
   
   .advisor-name {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 0.3rem;
     color: #2d3748;
   }
   
   .advisor-affiliation {
     color: #667eea;
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
   .advisor-description {
-    font-size: 0.95rem;
+    font-size: 1.6rem;
     color: #4a5568;
   }
   
@@ -412,13 +402,14 @@
     color: white;
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     white-space: nowrap;
   }
   
   .funding-title {
     font-weight: 500;
     color: #4a5568;
+    font-size: 2.1rem;
   }
   
   .collaboration-section {
@@ -448,10 +439,6 @@
 
   /* 添加响应式调整 */
   @media (max-width: 768px) {
-    .card-content {
-      flex-direction: column;
-    }
-    
     .image-container {
       max-height: 200px;
     }
