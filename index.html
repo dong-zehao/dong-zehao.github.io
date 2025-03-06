@@ -228,22 +228,23 @@
   gap: 2rem;
   align-items: center;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .profile-image {
-  flex: 0 0 400px;
+  flex: 0 0 100%;
   display: flex;
+  max-width: 600px; /* 确保不超过父容器 */
+  margin: 0 auto 1.5rem; /* 在小屏幕居中 */
 }
 
 .profile-photo {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: var(--card-shadow);
   object-fit: cover;
-  object-position: 55% center;
-  clip-path: inset(0% 20% 0 10%);
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+  transition: var(--transition);
 }
 
 .profile-photo:hover {
