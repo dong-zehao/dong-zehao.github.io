@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #3b82f6 !important;
+  --secondary-color: #f3f4f6 !important;
+  --background-color: #f9fafb !important;
+  --text-color: #1f2937 !important;
+  --text-light: #4b5563 !important;
+  --border-color: #e5e7eb !important;
+  --card-shadow: 0 10px 15px rgba(0,0,0,0.05) !important;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  background: var(--background-color) !important;
+  color: var(--text-color) !important;
+  line-height: 1.6 !important;
+}
+
+header#page_header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.menus_items .menus_item a {
+  color: var(--text-light);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color .3s, color .3s;
+}
+
+.menus_items .menus_item a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.side-card .card-wrap {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--border-color);
+  background: var(--primary-color);
+  color: #fff;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
