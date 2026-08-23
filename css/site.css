@@ -113,6 +113,7 @@ body .content-page article a:hover { color: var(--navy); }
 .timeline-entry h3 { margin: -.15rem 0 .35rem; overflow-wrap: anywhere; }
 .timeline-entry p { margin: .25rem 0 0; color: var(--ink-soft); }
 .timeline-entry .entry-meta { color: var(--blue); font-size: .82rem; font-weight: 700; }
+#presentations { grid-template-columns: 360px minmax(0, 1fr); }
 #presentations > .section-heading h2 { font-size: clamp(1.7rem, 2.6vw, 2.1rem); }
 
 .research-page .section-nav, .publications-page .section-nav { margin-bottom: 4.5rem; }
