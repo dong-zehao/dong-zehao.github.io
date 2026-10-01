@@ -164,9 +164,10 @@ body .content-page article a:hover { color: var(--navy); }
 .publications-page .pub-type { display: inline-block; margin: 0 0 .45rem; padding: .24rem .45rem; color: var(--navy); background: var(--blue-soft); border-radius: .15rem; font-size: .64rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .publications-page .pub-date { color: var(--ink-soft); font-size: .75rem; }
 .publications-page .pub-title { margin: -.25rem 0 .65rem; color: var(--ink); font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.3; }
-.publications-page .pub-authors, .publications-page .pub-journal, .publications-page .pub-doi { margin: .35rem 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.55; }
+.publications-page .pub-title a { color: inherit; text-decoration: none; }
+.publications-page .pub-title a:hover, .publications-page .pub-title a:focus-visible { color: var(--blue); text-decoration: underline; }
+.publications-page .pub-authors, .publications-page .pub-journal { margin: .35rem 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.55; }
 .publications-page .pub-journal { color: var(--ink); }
-.publications-page .pub-doi, .publications-page .pub-doi a { overflow-wrap: anywhere; }
 .publications-page .abstract-toggle { display: none !important; }
 .pub-abstract-details { margin: 1rem 0 .4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .pub-abstract-details summary { cursor: pointer; width: max-content; padding: .68rem 1.7rem .68rem 0; color: var(--blue); font-size: .78rem; font-weight: 800; list-style: none; }
